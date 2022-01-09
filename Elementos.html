@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Estilo.css" type="text/css">
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        <meta charset="utf-8">
+        <script>
+            var ultima_pulsada="nada";
+            function keyframes(){
+                document.getElementById("elemento").classList.replace(ultima_pulsada,"keyframes");
+                ultima_pulsada="keyframes";
+            }
+            function transition(){
+                document.getElementById("elemento").classList.replace(ultima_pulsada,"transicion");
+                ultima_pulsada="transicion";
+            }
+        </script>
+    </head>
+    <body>
+        <p id="elemento" class="nada">Hola</p>
+        <button onclick="keyframes()">Keyframes</button>
+        <button onclick="transition()">Transitions</button>
+    </body>
+</html>

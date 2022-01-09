@@ -1,0 +1,34 @@
+@keyframes animaTexto{
+    from {
+        margin-left: 0%;
+        width: 100%;
+    }
+    10%{
+        margin-left: 90%;
+        width: 100%
+    }
+    30% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+    70% {
+        font-size: 600%;
+        margin-left: 50%;
+        width: 120%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.keyframes{
+    animation-name: animaTexto;
+    animation-duration: 8s;
+    animation-iteration-count: 2;
+}
+
+.transicion{
+    
+}
