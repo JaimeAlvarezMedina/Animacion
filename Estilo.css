@@ -1,34 +1,57 @@
-@keyframes animaTexto{
-    from {
-        margin-left: 0%;
-        width: 100%;
+@Keyframes movimiento{
+    from{
+        color: black;
+        margin-top: 2%;
+        width: 10%;
     }
-    10%{
-        margin-left: 90%;
-        width: 100%
+    40%{
+        color: blue;
+        margin-top: 10%;
+        width: 10%;
     }
-    30% {
-        font-size: 300%;
-        margin-left: 25%;
-        width: 150%;
+    70%{
+        color: red;
+        margin-top: 25%;
+        width: 10%;
     }
-    70% {
-        font-size: 600%;
-        margin-left: 50%;
-        width: 120%;
+    90%{
+        color:blueviolet ;
+        margin-top: 40%;
+        width: 10%;
     }
-    to {
-        margin-left: 0%;
-        width: 100%;
+    to{
+        color: black;
+        margin-top: 2%;
+        width: 10%;
     }
 }
+
+p{
+    text-align: center;
+    width: 10%;
+}
+
+/* p{
+    opacity: 0.3;
+    transition: opacity .2s;
+} */
+/* .opacity1{
+    opacity:1;
+} */
 
 .keyframes{
-    animation-name: animaTexto;
-    animation-duration: 8s;
-    animation-iteration-count: 2;
+    animation-duration: 15s;
+    animation-iteration-count: 10;
+    animation-name: movimiento; 
 }
 
-.transicion{
-    
+.transform{
+    transition-duration: 3s;
+}
+
+.transform:hover{
+    background-color: red;
+    border-radius: 1px solid black;
+    color:white;
+    transform: translate(60px);
 }

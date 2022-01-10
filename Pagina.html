@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Estilo.css" type="text/css">
+        <script>
+            var ultima_pulsada="nada";
+            function keyframes(){
+                document.getElementById("elemento").classList.replace(ultima_pulsada,"keyframes");
+                ultima_pulsada="keyframes";
+            }
+            function transform(){
+                document.getElementById("elemento").classList.replace(ultima_pulsada,"transform");
+                ultima_pulsada="transform";
+            }
+            function opacidad(){
+                document.getElementById("bloque").classList.replace(ultima_pulsada,"opacity1");
+                ultima_pulsada="opacity1";
+            }
+
+        </script>
+    </head>
+    <body>
+        <div >
+            <p id="elemento" class="nada">
+                Puto
+            </p>
+        </div>
+        <button onclick="opacidad()">Púlsame</button>
+        <button onclick="keyframes()">Keyframes</button>
+        <button onclick="transform()">Transitions</button>
+    </body>
+</html>
