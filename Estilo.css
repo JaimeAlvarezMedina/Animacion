@@ -31,14 +31,6 @@ p{
     width: 10%;
 }
 
-/* p{
-    opacity: 0.3;
-    transition: opacity .2s;
-} */
-/* .opacity1{
-    opacity:1;
-} */
-
 .keyframes{
     animation-duration: 15s;
     animation-iteration-count: 10;
@@ -46,12 +38,14 @@ p{
 }
 
 .transform{
-    transition-duration: 3s;
+    transition-duration: 10s;
 }
 
 .transform:hover{
-    background-color: red;
-    border-radius: 1px solid black;
+    box-shadow: inset 200px 0 0 0 #ff0101;
+    border-style: 1px solid black;
+    border-radius: 25px;
     color:white;
     transform: translate(60px);
 }
+

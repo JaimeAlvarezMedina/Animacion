@@ -15,6 +15,10 @@
                 document.getElementById("bloque").classList.replace(ultima_pulsada,"opacity1");
                 ultima_pulsada="opacity1";
             }
+            function degradado(){
+                document.getElementById("bloque").classList.replace(ultima_pulsada,"btn");
+                ultima_pulsada="btn";
+            }
 
         </script>
     </head>
@@ -27,5 +31,6 @@
         <button onclick="opacidad()">Púlsame</button>
         <button onclick="keyframes()">Keyframes</button>
         <button onclick="transform()">Transitions</button>
+
     </body>
 </html>
